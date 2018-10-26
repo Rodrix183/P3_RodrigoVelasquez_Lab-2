@@ -134,9 +134,9 @@ int main(){
                     
                     for(int i = 0; i < verbo.size();i++){
                            if(i == verbo.size() - 2){
-                                arre[i] = verbo[i];
+                                arre[0] = verbo[i];
                             }else if(i == verbo.size() - 1){
-                                arre[i] = verbo[i];
+                                arre[1] = verbo[i];
                             }else{
                                 arre2[i] = verbo[i];
                             }     
@@ -153,7 +153,7 @@ int main(){
                     }
                 }while(erick != true);
                 
-                cout<<"Pasado: ";
+            cout<<endl<<"Pasado: ";
                 //for de pasado
                 for(int i = 0; i < verbo.size()-2;i++){
                     cout<<arre2[i];
@@ -165,7 +165,7 @@ int main(){
                 }else if(arre[0]=='i'){
                     cout<<"i";
                 }
-                cout<<"Futuro: ";
+                cout<<endl<<"Futuro: ";
                 for(int i = 0; i < verbo.size()-2;i++){
                     cout<<arre2[i];
                 }
