@@ -209,9 +209,11 @@ void imprimir(char* arreglo,int size){
 
 int* fillArray(int size,int decimal){
     int* arreglo = new int[size];
+    int c = 0;
     //int* arregloOmejia = new int[8];
     for(int i = 0; i < size;i++){
-           arreglo[i] = decimal%2;
+            c = decimal%2 == 0;
+            arreglo[i] = c;
             decimal = decimal/2; 
     }
     return arreglo;
